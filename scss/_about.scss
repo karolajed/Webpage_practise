@@ -1,0 +1,36 @@
+#about-section {
+  background-color: #fff;
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about {
+      min-height: 300px;
+      max-width: 800px;
+      text-align: center;
+      display: -webkit-box;  
+      display: -ms-flexbox;  
+      display: -webkit-flex; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-family: $font-1;
+        font-weight: 600;
+      }
+      p {
+        font-family: $font-2;
+      }
+      img {
+        max-width: 60%;
+      }
+      h1,
+      p,
+      img {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+  }
+}

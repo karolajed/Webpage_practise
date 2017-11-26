@@ -1,0 +1,72 @@
+#contact-section {
+  background-color: #F6F6F6;
+  color: #000;
+
+  .container-fluid {
+
+    .form-container {
+      width: 100%;
+
+      .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+
+        .contact-info,
+        .contact-form {
+          width: 30%;
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+          }
+        }
+
+        .contact-info {
+
+
+          h1 {
+            font-family: $font-1;
+            font-weight: 600;
+          }
+
+          p,
+          .contact-adress,
+          .contact-phone,
+          .contact-email,
+          .contact-fax {
+            font-family: $font-2;
+          }
+        }
+
+        .contact-form {
+          .form-group {
+            .one-row {
+              @media only screen and (min-width: 970px) {
+                display: inline;
+              }
+            }
+
+            input,
+            textarea,
+            button {
+              font-family: $font-2;
+              border: none;
+              margin: 1em;
+              padding: 1em;
+            }
+          }
+
+          button {
+            border-radius: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: $font-2;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
